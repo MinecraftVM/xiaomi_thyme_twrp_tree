@@ -15,14 +15,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.kona \
-    bootctrl.kona.recovery \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl
+    android.hardware.boot@1.1-impl-qti.recovery \
+    bootctrl.$(PRODUCT_PLATFORM).recovery \
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
